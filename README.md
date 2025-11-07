@@ -1,0 +1,2 @@
+# adhekarijewellers
+Daily Jewellery Rate 
