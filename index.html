@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: times new roman, serif, sans-serif, pappins;
+}
+body {
+    min-height: 100vh;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 85px;
+    padding: 1.3rem 10%;
+   /*  background-color: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #0b1b22, #0e2a33);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+   /* Remove symbol to see magic left: 0; */
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+    transition: .5s;
+}
+.header:hover::after{
+    left: 100%;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+.navbar a:hover{
+    color: rgba(255,0,0,.9);
+    font-size: 20px;
+}
+#check{
+    display: none;
+} 
+/* menu icon */
+.icons{
+    top: 20%;
+    position: absolute;
+    right: 4.5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    border: 4px solid rgba(255, 255, 255, .7);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, .7));
+    transition: 1.2s all ease;
+}
+
+.icons:hover {
+    color: #b78829;
+    border: 4px solid #b78829;
+    border-radius: 10px;
+    font-size: 30px;
+    transition: 1s all ease;
+}
+
+/*U-turn*/
+@media (max-width: 980px) {
+    .header{
+        padding: 1.3rem 3%;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+}
+@media (max-width: 792px) {
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon {
+    display: none;
+    }
+    #check:checked~.icons #close-icon{
+    display: block;
+    }
+    /* Shutter */
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .8s ease;
+    }
+    #check:checked~.navbar {
+    height: 17.7rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .8s ease;
+    }
+    .navbar a:hover{
+      background: white;
+      border: .1px dashed white;
+      border-radius: 20px;
+      color: var(--gold);
+    }
+    }
+    #check:checked~.navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.05s * var(--i));
+    }
+}
+#menu-icon{
+    font-size: 30px;
+}
+#close-icon{
+    font-size: 30px;
+    color: red;
+}
+#close-icon:hover {
+    color: #b78829;
+}
+#logo1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+  form{border: 0px solid white;
+  }
+  to{
+      border: 1.5px dotted #b78829;
+}
+}
+  </style>
+</head>
+<body>
+  <!-- Please select desktop mode and rotate your screen -->
+  <header class="header">
+    <a href="index.html" class="logo"><img src="https://i.postimg.cc/rsYqMRfZ/logo.png" alt="logo" id="logo1"></a>
+    
+    <input type="checkbox" id="check">
+    
+    <label for="check" class="icons">
+     <i class="bx bx-menu-wider" id="menu-icon"></i>
+     <i class='bxr  bx-x' id="close-icon"></i> 
+    </label>
+  
+  <nav class="navbar">
+    <a href="index.html" style="--i:0;">Home</a>
+    <a href="about.html" style="--i:1;">About</a>
+    <a href="gallery.html" style="--i:2;">Gallery</a>
+    <a href="internationalgoldprice.html">International Gold Price</a>
+    <a href="contact.html" style="--i:4;">Contact</a>
+  </nav>
+  </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bajus/Edited by R.K.A</title>
+  <style>
+    :root{
+      --gold:#caa43a;
+      --silver: #D3D3D3;
+      --deep:#0e2830;
+      --cream:#f8f2ea;
+      --table-head:#0d2930;
+      --accent:#b78829;
+      --silver:#bfbfbf;
+    }
+    *{box-sizing:border-box}
+    body{
+    margin: 0px;
+    font-family: times, "Noto Sans Bengali", "Segoe UI", Arial, sans-serif;
+    min-height: 100vh;
+    width: auto;
+    background: var(--cream);
+    color:#111;
+    }
+
+    /* Header */
+    #header{
+      margin-top: 50px;
+      width: 102%;
+      background: linear-gradient(90deg, #0b1b22, #0e2a33);
+      color: var(--cream);
+      padding:16px;
+      display:flex;
+      align-items: center;
+      gap:14px;
+      border-bottom:3px solid var(--accent);
+    }
+   .logo{
+      height: auto;
+      width: 100%;
+      border-radius: 4px
+    }
+  
+    #number{
+      margin-top: 25px;
+    margin-left: 190px;
+    font-size:14px; 
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    transition: 1s 0.5s all ease-in;
+    }
+    #number:hover{
+      font-size:16px;
+      transition: 2s all ease-in;
+      color: var(--gold);
+    }
+    /* body 1st content */
+    .page{
+      max-width: 1100px;
+      margin: 25px auto;
+      padding: 20px;
+    }
+
+    /* pdf Button Position */
+    .title{
+      display:flex;
+      align-items: center;
+      margin-bottom:40px;
+    }
+    /* pdf button */
+    .pdf-btn{
+      font-size: 15px;
+      font-family: times;
+      background: transparent;
+      border: .1px solid #23363b;
+      color:#23363b;
+      padding:10px 15px;
+      border-radius:15px;
+      text-decoration:none;
+      font-weight:500;
+      transition: 1s all ease-in;
+    }
+    .pdf-btn:hover{
+      background-color: var(--gold);
+      color: var(--cream);
+      transition: .5s all ease-in;
+      border: 3px solid var(--gold);
+    }
+
+    /* Gold Rate Banner */
+    #goldbanner {
+  margin-top: 0px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid gold;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+#silverbanner {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  height: 50px;
+  width: 90%;
+  display: flex;
+  margin-left: 20px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+    /* Table */
+    .rates{
+      width: 111.4%;
+      margin-top: 0;
+      margin-left: -15px;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    #rates2{
+      width: 100%;
+      margin-left: 5px;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    #rates2 thead th{
+      background: #D3D3D3;
+      background: #0d2930;
+      color:var(--gold);
+      padding: 10px;
+      font-size: 15px;
+      text-align: center;
+    }
+    .rates thead th{
+      background: var(--table-head);
+      color:var(--gold);
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-bottom: 6px solid rgba(0,0,0,0.08);
+    }
+    #rates2 tbody td{
+      padding: 25px 20px;
+      background: #D3D3D3;
+      border-bottom: solid rgba(0, 0, 0, 0.7);
+      font-size: 15px;
+      vertical-align: middle;
+    }
+    .rates tbody td{
+      padding: 25px 20px;
+      background: #fdf1af;
+      border-bottom:  solid rgba(0,0,0,0.7);
+      font-size: 15px;
+      vertical-align: middle;
+    }
+    .product1{
+      width: 28%;
+      font-weight: 700; 
+      color:#21303a
+    }
+    .desc1{
+      width: 44%;
+      text-transform: uppercase;
+      opacity: 0.9; 
+      letter-spacing: 0.6px
+    }
+    /* Box Content */
+    .price1{
+      width: 28%; 
+      text-align: center; 
+      font-weight: 900; 
+      font-size: 20px; 
+      color:#16303a;
+    }
+    
+    .product2{
+      width: 28%;
+      font-weight: 700; 
+      color:#21303a
+    }
+    .desc2{
+      width: 44%;
+      text-transform: uppercase;
+      opacity: 0.9; 
+      letter-spacing: 0.6px
+    }
+    /* Box Content */
+    .price2{
+      width: 28%; 
+      text-align: center; 
+      font-weight: 900; 
+      font-size: 16px; 
+      color:#16303a;
+    }
+    .ticker-wrap{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background:#000;
+      color:var(--gold);
+      padding: 10px 10px;
+      font-weight: 700;
+      z-index: 999;
+      box-shadow: 0 -6px 20px rgba(0,0,0,0.5);
+    }
+    .ticker{
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker .text{
+      display: inline-block;
+      padding-left: 100%;
+      height: 28px;
+      animation: scroll 60s linear infinite;
+    }
+    @keyframes scroll{
+      0%{transform: translateX(0)}
+      100%{transform: translateX(-100%)}
+    }
+
+    /* Responsive */
+    @media (max-width: 820px){
+      .rates thead th{
+        font-size: 14px; 
+        padding: 12px
+      }
+      .rates tbody td{
+        padding:14px;
+      }
+      .page h1{
+        text-align:center;
+        font-size:18px}
+    }
+    @media (max-width: 820px){
+      #rates2 thead th{
+        font-size: 14px; 
+        padding: 12px;
+      }
+      #rates2 tbody td{
+        padding: 14px;
+      }
+      .page h1{
+        text-align:center;
+        font-size:18px}
+    }
+    b{
+      color: red;
+    }
+    
+      /* Last Update */
+    .note{
+      margin-top: 15px; 
+      margin-left: 10px;
+      font-size: 15px; 
+      font-weight: 500;
+      color: var(--cream);
+      font-weight: 700;
+      animation: onoff 1.5s normal infinite;
+    }
+    @keyframes onoff{
+      from{
+        color: ;
+      }
+      to{
+        color: var(--gold);
+      }
+    }
+    #brand{
+      height: 45px; 
+      width: 45px;
+      border-radius: 50px;
+      display: none;
+    }
+    
+    #live{
+      margin-top: 15px; 
+      margin-left: 10px;
+      font-size: 35px; 
+      font-weight: 500;
+      color: var(--cream);
+      font-weight: 700;
+      animation: live 1s steps(4) infinite;
+      animation-duration: 1.5s;
+    }
+    @keyframes live{
+      from{
+        color: var(--cream);
+      }
+      to{
+        color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div style="display:flex;align-items:center; gap:5px">
+      <div>
+        <img src="https://i.postimg.cc/rsYqMRfZ/logo.png" alt="logo" id="brand">
+      </div>
+    <a href="tel:01939466248" id="number">Hotline: +8801939466248</a>
+  </header>
+
+  <!-- Body -->
+  <div class="page">
+    <div class="title">
+      
+      <!-- Pdf Button-->
+      <a class="pdf-btn" href="https://drive.google.com/file/d/1fnQ0HkceJ2ZGEqGBDelpgh6zE9Xpars3/view?usp=drivesdk" rel="noopener">VIEW IN PDF</a>
+    </div>
+
+    <!-- Gold Rate -->
+    <img src="https://i.postimg.cc/MK2Sbwh2/gold-Banner.png" alt="GoldBanner" id="goldbanner">
+
+    <!-- Table -->
+    <table class="rates" aria-label="Gold and Silver rates">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th style="text-align: center">Price<br>(BDT/GRAM)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product1">22 KARAT Gold</td>
+          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
+          <td class="price1">17,379</td>
+        </tr>
+        <tr>
+          <td class="product1">21 KARAT Gold</td>
+          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
+          <td class="price1">16,590</td>
+        </tr>
+        <tr>
+          <td class="product1">18 KARAT Gold</td>
+          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
+          <td class="price1">14,220</td>
+        </tr>
+         <tr>
+           <td class="product1">Traditional Gold</td>
+           <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
+           <td class="price1">11,818</td>
+           </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <div class="text">
+        <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭৩৭৯/- 
+        <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৬৫৯০/-
+        <b>●</b> ১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য:১৪২২০/-
+        <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৬৪/-
+        <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৪৭/
+        <b>●</b>১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ২৯৮/—
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Silver -->
+  <img src="https://i.postimg.cc/pTLNrXhq/silverbanner.png" alt="GoldBanner" id="silverbanner">
+<table id="rates2" aria-label="Gold and Silver rates">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Description</th>
+      <th style="text-align: center">Price<br>(BDT/GRAM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="product2">22 KARAT Silver</td>
+      <td class="desc2">CADMIUM (HALLMARKED Silver)</td>
+      <td class="price2">364</td>
+    </tr>
+    <tr>
+      <td class="product2">21 KARAT Silver</td>
+      <td class="desc2">CADMIUM (HALLMARKED Silver)</td>
+      <td class="price2">347</td>
+    </tr>
+    <tr>
+      <td class="product2">18 KARAT Silver</td>
+      <td class="desc2">CADMIUM (HALLMARKED Silver)</td>
+      <td class="price2">298</td>
+    </tr>
+    <tr>
+      <td class="product2">Traditional Silver</td>
+      <td class="desc2">CADMIUM (HALLMARKED Silver)</td>
+      <td class="price2">223</td>
+    </tr>
+  </tbody>
+</table> <br>
+<i class='bxr  bx-broadcast' id="live"></i>
+<div class="note">
+  • সর্বশেষ আপডেট: ০২ নভেম্বর, ২০২৫
+  <br>
+  • সময়: রাত ০৭:০০ ঘটিকা
+  </div>
+<br><br><br>
+
+</body>
+</html>
