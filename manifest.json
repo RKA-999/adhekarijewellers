@@ -1,7 +1,8 @@
 {
   "name": "Adhikari Jewellers",
   "short_name": "Adhikari",
-  "start_url": "./index.html",
+  "start_url": "/adhekarijewellers/index.html",
+  "scope": "/adhekarijewellers/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#d4af37",
