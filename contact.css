@@ -187,7 +187,7 @@ body {
 
 
 #call{
-  position: fixed;
+  position: relative;
   top: 90px;
   font-family: serif;
   height: 30px;
