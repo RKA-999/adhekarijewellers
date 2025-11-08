@@ -1,19 +1,19 @@
 {
-  "name": "Adhikari Jewellers",
-  "short_name": "Adhikari",
-  "start_url": "/adhekarijewellers/index.html",
-  "scope": "/adhekarijewellers/",
+  "name": "অধিকারী জুয়েলার্স",
+  "short_name": "Adhikari J.",
+  "start_url": "/adhekarijewellers/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#d4af37",
+  "theme_color": "#f0b400",
+  "description": "অধিকারী জুয়েলার্সের অফিসিয়াল ওয়েবসাইট ও অ্যাপ",
   "icons": [
     {
-      "src": "icons/icon-192x192.png",
+      "src": "images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512x512.png",
+      "src": "images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
