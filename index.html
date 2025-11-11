@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Page</title>
   <link rel="stylesheet" href="style.css">
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'> 
-
-
-  <link rel="manifest" href="manifest.json">
-
   
+  <link rel="manifest" href="manifest.json">
+  
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 *{
@@ -25,9 +23,9 @@ body {
 }
 .header{
     position: fixed;
-    top: 0px;
+    top: .1px;
     left: 0px;
-    width: 99.9%;
+    width: 99.9%; /* update */
     height: 85px;
     padding: 1.3rem 10%;
    /*  background-color: rgba(0, 0, 0, .1);
@@ -70,7 +68,7 @@ body {
     text-decoration: none;
     font-weight: 800;
 }
-.navbar a{
+  .navbar a{
     font-size: 1.15rem;
     color: white;
     text-decoration: none;
@@ -86,29 +84,28 @@ body {
 } 
 /* menu icon */
 .icons{
-    top: 27.5%;
+    top: 27.5%; /* update */
     position: absolute;
     right: 4.5%;
     font-size: 30px;
     color: #fff;
     cursor: pointer;
     display: none;
-    border: 2px solid rgba(255, 255, 255, .7);
-    padding: 7px;
+    border: 2px solid rgba(255, 255, 255, .7); /* update */
+    padding: 7px; /* update */
     border-radius: 10px;
     color: rgba(255, 255, 255, .7));
     transition: 1.2s all ease;
 }
 
 .icons:hover {
-    color: red;
-    border: 4px solid #b78829;
+    color: red; /* update */
+    border: 2px solid #0e2830;
+    box-shadow: .5px .5px var(--cream); /*update*/
     border-radius: 10px;
     font-size: 30px;
-    box-shadow: .5px .5px var(--cream);
-    transform: rotate(90deg);
+    transform: rotate(90deg); /* update */
 }
-
 /*U-turn*/
 @media (max-width: 980px) {
     .header{
@@ -168,12 +165,17 @@ body {
 }
 #menu-icon{
     font-size: 30px;
+    color: white;
+    transition: 1.2s all ease;
 }
 #close-icon{
     font-size: 30px;
     color: red;
-    transition: 1.2s all ease;
+    transition: 1.2s all ease; /* update */
 }
+/*#close-icon:hover {
+    color: #b78829;
+} */ /* update */
 #logo1{
     height: 40px;
     width: 40px;
@@ -252,7 +254,7 @@ body {
     /* Header */
     #header{
       margin-top: 50px;
-      width: 101.2%;
+      width: 101.2%;   /*update*/
       background: linear-gradient(90deg, #0b1b22, #0e2a33);
       color: var(--cream);
       padding:16px;
@@ -268,16 +270,16 @@ body {
     }
   
     #number{
-      margin-top: 25px;
-    margin-left: 190px;
-    font-size:14px; 
+    margin-top: 25px;
+    margin-left: 216px;
+    font-size:15px; 
     text-decoration: none;
     color: white;
     text-align: right;
-    transition: 1s 0.5s all ease-in;
+    transition: .8s .5s all ease-in;
     }
     #number:hover{
-      font-size:16px;
+      font-size: 15.5px;
       transition: 2s all ease-in;
       color: var(--gold);
     }
@@ -519,15 +521,41 @@ body {
         color: red;
       }
     }
+    .timebox{
+      padding: 10px;
+      margin-top: 50px;
+      background-color: var(--gold);
+      text-align: center;
+      margin-left: 22px;
+      height: auto;
+      border-radius: 20px;
+      width: 350px;
+      border: 2px solid gold;
+      box-shadow: 1px 1px black;
+    }
+    #timebanner {
+      text-shadow: 2px 1.5px black;
+      color: white;
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 30px;
+      font-weight: bold;
+}
+    #time{
+      color: white;
+      text-shadow: 1px .5px black;
+      font-size: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 30px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header id="header">
     <div style="display:flex;align-items:center; gap:5px">
-      <div>
-        <img src="https://i.postimg.cc/rsYqMRfZ/logo.png" alt="logo" id="brand">
-      </div>
     <a href="tel:01939466248" id="number">Hotline: +8801939466248</a>
   </header>
 
@@ -536,7 +564,7 @@ body {
     <div class="title">
       
       <!-- Pdf Button-->
-      <a class="pdf-btn" href="https://drive.google.com/file/d/1dzV6ptf_a3AYbPxHZ7wu0k-Lgv1W7t7_/view?usp=drivesdk">VIEW IN PDF</a>
+      <a class="pdf-btn" href="https://drive.google.com/file/d/1fnQ0HkceJ2ZGEqGBDelpgh6zE9Xpars3/view?usp=drivesdk" rel="noopener">VIEW IN PDF</a>
     </div>
 
     <!-- Gold Rate -->
@@ -597,7 +625,7 @@ body {
     <tr>
       <th>Product</th>
       <th>Description</th>
-      <th style="text-align: center">Price<br>(BDT/GRAM)</th>
+      <th style="<text></text>-align: center">Price<br>(BDT/GRAM)</th>
     </tr>
   </thead>
   <tbody>
@@ -625,11 +653,48 @@ body {
 </table> <br>
 <i class='bxr  bx-broadcast' id="live"></i>
 <div class="note">
-  • সর্বশেষ আপডেট: ১১ নভেম্বর, ২০২৫
+  • সর্বশেষ আপডেট: ০২ নভেম্বর, ২০২৫
   <br>
-  • সময়: সকাল ০৬:৫৮ ঘটিকা
+  • সময়: রাত ০৭:০০ ঘটিকা
   </div>
-<br><br><br>
-
+  
+  
+  <div class="timebox">
+    <p id="timebanner">বর্তমান তারিখ ও সময়</p>
+    <div id="time">
+  <script>
+    function updateClock() {
+      const now = new Date();
+      
+      // Set the options for a 12-hour format with AM/PM
+      const options = {
+        // Include Date Components
+        weekday: 'long', // e.g., Tue
+        month: 'long', // e.g., Nov
+        day: 'numeric', // e.g., 11
+        year: 'numeric', // e.g., 2025
+        
+        // Include Time Components
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true // <<-- This ensures 12-hour format with AM/PM
+      };
+      
+      // Use toLocaleTimeString() to format the date and time based on the options
+      const dateTimeString = now.toLocaleTimeString('en-US', options);
+      // Find the HTML element and insert the formatted time
+      document.getElementById('time').innerHTML = dateTimeString;
+    }
+    
+    // 1. Run the function once immediately to show the time without delay
+    updateClock();
+    
+    // 2. Set the function to run every 1000 milliseconds (1 second) to update the time
+    setInterval(updateClock, 1000);
+  </script>
+</div>
+  </div>
+<br><br><br><br>
 </body>
 </html>
