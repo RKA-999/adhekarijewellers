@@ -27,7 +27,7 @@ body {
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 100%;
+    width: 99.9%;
     height: 85px;
     padding: 1.3rem 10%;
    /*  background-color: rgba(0, 0, 0, .1);
@@ -86,26 +86,27 @@ body {
 } 
 /* menu icon */
 .icons{
-    top: 20%;
+    top: 27.5%;
     position: absolute;
     right: 4.5%;
     font-size: 30px;
     color: #fff;
     cursor: pointer;
     display: none;
-    border: 4px solid rgba(255, 255, 255, .7);
-    padding: 5px;
+    border: 2px solid rgba(255, 255, 255, .7);
+    padding: 7px;
     border-radius: 10px;
     color: rgba(255, 255, 255, .7));
     transition: 1.2s all ease;
 }
 
 .icons:hover {
-    color: #b78829;
+    color: red;
     border: 4px solid #b78829;
     border-radius: 10px;
     font-size: 30px;
-    transition: 1s all ease;
+    box-shadow: .5px .5px var(--cream);
+    transform: rotate(90deg);
 }
 
 /*U-turn*/
@@ -171,9 +172,7 @@ body {
 #close-icon{
     font-size: 30px;
     color: red;
-}
-#close-icon:hover {
-    color: #b78829;
+    transition: 1.2s all ease;
 }
 #logo1{
     height: 40px;
@@ -253,7 +252,7 @@ body {
     /* Header */
     #header{
       margin-top: 50px;
-      width: 102%;
+      width: 101.2%;
       background: linear-gradient(90deg, #0b1b22, #0e2a33);
       color: var(--cream);
       padding:16px;
