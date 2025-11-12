@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: .1px;
     left: 0px;
-    width: 99.9%; /* update */
+    width: 97%; /* update9999999999999999*/
     height: 85px;
     padding: 1.3rem 10%;
    /*  background-color: rgba(0, 0, 0, .1);
@@ -204,7 +204,7 @@ body {
     /* Header */
     #header{
       margin-top: 50px;
-      width: 105%;   /*update 999999999999*/
+      width: 100%;   /*update 999999999999*/
       background: linear-gradient(90deg, #0b1b22, #0e2a33);
       color: var(--cream);
       padding:16px;
