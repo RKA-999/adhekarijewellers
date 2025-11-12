@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: .1px;
     left: 0px;
-    width: 95%; /* update9999999999999999*/
+    width: 93%; /* update9999999999999999*/
     height: 85px;
     padding: 1.3rem 10%;
    /*  background-color: rgba(0, 0, 0, .1);
@@ -194,6 +194,7 @@ body {
       
     }
     body{
+        margin: 0;
     font-family: times, "Noto Sans Bengali", "Segoe UI", Arial, sans-serif;
     min-height: 100vh;
     width: auto;
@@ -204,7 +205,7 @@ body {
     /* Header */
     #header{
       margin-top: 50px;
-      width: 98.5%;   /*update 999999999999*/
+      width: 97.5%;   /*update 999999999999*/
       background: linear-gradient(90deg, #0b1b22, #0e2a33);
       color: var(--cream);
       padding:16px;
