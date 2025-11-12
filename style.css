@@ -144,6 +144,12 @@ body {
         opacity: 0;
         transition: .8s ease;
  }
+    .navbar a:hover{
+      background: white;
+      border: .1px dashed white;
+      border-radius: 20px;
+      color: var(--gold);
+    }
     #check:checked~.navbar a {
     transform: translateY(0);
     opacity: 1;
