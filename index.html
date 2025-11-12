@@ -169,6 +169,71 @@
   </div>
 </div>
 </body>
+</html>  <tr>
+    <td class="product2">TRADITIONAL<br>SILVER</td>
+    <td class="desc2">CADMIUM (HALLMARKED<br>SILVER)</td>
+    <td class="price2">223</td>
+  </tr>
+</table>
+<br>
+<i class='bxr  bx-broadcast' id="live"></i>
+<div class="note">
+  • সর্বশেষ আপডেট: ০২ নভেম্বর, ২০২৫
+  <br>
+  • সময়: রাত ০৭:০০ ঘটিকা
+</div>
+
+<div class="timebox">
+  <p id="timebanner">বর্তমান তারিখ ও সময়</p>
+  <div id="time">
+    <script>
+      function updateClock() {
+        const now = new Date();
+        
+        // Set the options for a 12-hour format with AM/PM
+        const options = {
+          // Include Date Components
+          weekday: 'long', // e.g., Tue
+          month: 'long', // e.g., Nov
+          day: 'numeric', // e.g., 11
+          year: 'numeric', // e.g., 2025
+          
+          // Include Time Components
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true // <<-- This ensures 12-hour format with AM/PM
+        };
+        
+        // Use toLocaleTimeString() to format the date and time based on the options
+        const dateTimeString = now.toLocaleTimeString('en-US', options);
+        // Find the HTML element and insert the formatted time
+        document.getElementById('time').innerHTML = dateTimeString;
+      }
+      
+      // 1. Run the function once immediately to show the time without delay
+      updateClock();
+      
+      // 2. Set the function to run every 1000 milliseconds (1 second) to update the time
+      setInterval(updateClock, 1000);
+    </script>
+  </div>
+</div>
+
+
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <div class="text">
+      <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭৩৭৯/-
+      <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৬৫৯০/-
+      <b>●</b> ১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য:১৪২২০/-
+      <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৬৪/-
+      <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৪৭/
+      <b>●</b>১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ২৯৮/—
+    </div>
+  </div>
+</div>
+</body>
 </html>        <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭০৬১/-
         <b>●</b> ১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য: ১৪৬২৩/-
         <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৬৪/-
