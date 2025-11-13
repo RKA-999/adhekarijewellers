@@ -86,20 +86,19 @@ body {
     position: absolute;
     right: 4.5%;
     font-size: 30px;
-    color: #fff;
     cursor: pointer;
     display: none;
     border: 1px solid #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 7px; /* update */
     border-radius: 10px;
-    color: rgba(255, 255, 255, .7);
+    color: white;
     transition: 1.2s all ease;
 }
 .icons:hover {
     color: red;
     border: 2px solid #0e2830;
-    box-shadow: .5px .5px var(--cream); /*update*/
+    box-shadow: .5px .5px var(--cream);
     border-radius: 10px;
     font-size: 30px;
     transform: rotate(90deg); /* update */
@@ -246,20 +245,21 @@ body {
       font-size: 15px;
       font-family: Hind Siliguri;
       background: transparent;
-      border: 1px solid #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       color:#23363b;
       padding:10px 15px;
       border-radius:15px;
       text-decoration:none;
       font-weight:500;
-      transition: 1s all ease-in;
+      transition: 1s all ease;
+      
+      border: 1px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .pdf-btn:hover{
       background-color: var(--gold);
       color: var(--cream);
-      transition: .5s all ease-in;
-      border: 2px solid var(--gold);
+      border: 1px solid var(--gold);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
 
@@ -441,8 +441,12 @@ body{
       height: auto;
       border-radius: 20px;
       width: 300px;
-      border: 1px solid #DEDEE9;
+      border: 1px solid #DEDEE9; /* update */
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: 1s all ease;
+    }
+    .timebox:hover{
+        transform: translateY(-5px);
     }
     #timebanner {
       font-family: Hind Siliguri;
@@ -490,4 +494,68 @@ body{
     }
 b{
     color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+:root{
+     --cream: #f8f2ea;
+}
+body{
+    background-color: var(--cream);
+}
+.chart-container {
+    width: 95%; 
+    height: 400px; /* এই মানটি এখন পরিবর্তন করতে হবে */
+    margin: 0 auto;
+}
+.chart-container {
+    /* ছোট স্ক্রিনের জন্য ডিফল্ট উচ্চতা */
+    width: 95%;
+    height: 450px;
+    margin: 0 auto;
+}
+
+/* 768px-এর চেয়ে বড় স্ক্রিনের জন্য উচ্চতা বৃদ্ধি */
+@media (min-width: 768px) {
+    .chart-container {
+        height: 600px;
+    }
+}
+#goldgraph{
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgba(248, 246, 246, 1);
+    border-radius: 20px;
+    box-shadow: #666363;
+    border: 1px solid #DEDEE9; /* update */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease;
+}
+
+#goldgraph:hover{
+    transform: translateY(-5px);
+}
+
+#silvergraph{
+    width: 100%;
+    margin-top: 100px;
+    background-color: rgba(248, 246, 246, 1);
+    border-radius: 20px;
+    box-shadow: #666363;
+    border: 1px solid #DEDEE9; /* update */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease;
+    margin-bottom: 50px;
+}
+#silvergraph:hover {
+    transform: translateY(-5px);
 }
