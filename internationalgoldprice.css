@@ -1,30 +1,35 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-     :root {
-   --gold: #caa43a;
-   --silver: #D3D3D3;
-   --deep: #0e2830;
-   --cream: #f8f2ea;
-   --table-head: #0d2930;
-   --accent: #b78829;
-   --silver: #bfbfbf;
- }
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+
+:root {
+    --gold: #caa43a;
+    --silver: #D3D3D3;
+    --deep: #0e2830;
+    --cream: #f8f2ea;
+    --table-head: #0d2930;
+    --accent: #b78829;
+    --silver: #bfbfbf;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: times new roman, serif, sans-serif, pappins;
+    font-family: Hind Siliguri;
 }
 body {
     min-height: 100vh;
+    background: var(--cream);
+    background-size: cover;
+    background-position: center;
 }
 .header{
     position: fixed;
-    top: .1px;
+    top: 0px;
     left: 0px;
-    width: 99.9%; /* update */
-    height: 85px;
+    width: 100%;
     padding: 1.3rem 10%;
-   /*  background-color: rgba(0, 0, 0, .1);
+   /* background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px); */
     display: flex;
     justify-content: space-between;
@@ -38,7 +43,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #0b1b22, #0e2a33);
+    background: red;
+    background-color: #0b1b22;
     backdrop-filter: blur(50px);
     z-index: -1;
 }
@@ -57,28 +63,24 @@ body {
     left: 100%;
 }
 .logo{
-    margin-top: 20px;
-    margin-left: 5px;
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-    font-weight: 800;
+    
+     margin-top: 15px;
+     margin-left: 5px;
+     font-size: 2rem;
+     color: white;
+     text-decoration: none;
+     font-weight: 800;
 }
-  .navbar a{
+.navbar a{
     font-size: 1.15rem;
     color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 2.5rem;
 }
-.navbar a:hover{
-    color: rgba(255,0,0,.9);
-    font-size: 20px;
-}
 #check{
     display: none;
-} 
-/* menu icon */
+}
 .icons{
     top: 27.5%; /* update */
     position: absolute;
@@ -93,9 +95,8 @@ body {
     color: rgba(255, 255, 255, .7);
     transition: 1.2s all ease;
 }
-
 .icons:hover {
-    color: red; /* update */
+    color: red;
     border: 2px solid #0e2830;
     box-shadow: .5px .5px var(--cream); /*update*/
     border-radius: 10px;
@@ -121,7 +122,6 @@ body {
     #check:checked~.icons #close-icon{
     display: block;
     }
-    /* Shutter */
     .navbar{
         position: absolute;
         top: 100%;
@@ -145,32 +145,35 @@ body {
         transform: translateY(-50px);
         opacity: 0;
         transition: .8s ease;
-    }
-    .navbar a:hover{
-      background: white;
-      border: .1px dashed white;
-      border-radius: 20px;
-      color: var(--gold);
-    }
-    }
+ }
+ 
+ .navbar a:hover {
+    background: white;
+    border: .1px dashed white#42445A;
+    border-radius: 20px;
+    color: var(--gold);
+}
+ 
     #check:checked~.navbar a {
     transform: translateY(0);
     opacity: 1;
-    transition-delay: calc(.05s * var(--i));
+    transition-delay: calc(.15s * var(--i));
     }
+}
 #menu-icon{
     font-size: 30px;
-    color: white;
-    transition: 1.2s all ease;
+}
+#menu-icon:hover{
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
 }
 #close-icon{
     font-size: 30px;
-    color: red;
-    transition: 1.2s all ease; /* update */
 }
-/*#close-icon:hover {
-    color: #b78829;
-} */ /* update */
+#close-icon:hover {
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+}
 #logo1{
     height: 40px;
     width: 40px;
@@ -187,8 +190,47 @@ body {
       border: 1.5px dotted #b78829;
 }
 }
-#webpage{
-    margin-top: 67px;
+
+
+
+
+    /* Header */
+    #header{
+      margin-top: 80px;
+      width: 100%;
+      background: linear-gradient(90deg, #0b1b22);
+      color: var(--cream);
+      padding:16px;
+      display:flex;
+      align-items: center;
+      gap:14px;
+      border-bottom:3px solid var(--accent);
+    }
+   .logo{
+      height: auto;
+      width: 100%;
+      border-radius: 4px
+    }
+  
+    #number{
+    font-family: Hind Siliguri;
+    margin-top: 25px;
+    margin-right: 0px auto;
+    font-size: 16.5px; 
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    transition: .8s .5s all ease-in;
+    }
+    #number:hover{
+      font-size: 15.5px;
+      transition: 2s all ease-in;
+      color: var(--gold);
+    }
+    
+    
+#webpage {
+    top: 110px;
     height: 250px;
     width: 391.5px;
     position: fixed;
