@@ -439,8 +439,8 @@ body{
       height: auto;
       border-radius: 20px;
       width: 300px;
-      border: 2px solid var(--gold);
-      box-shadow: 1px 1px var(--gold);
+      border: 1px solid #DEDEE9;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     #timebanner {
       font-family: Hind Siliguri;
