@@ -196,6 +196,7 @@ body {
 
     /* Header */
     #header{
+      position: fixed;
       margin-top: 80px;
       width: 100%;
       background: linear-gradient(90deg, #0b1b22);
