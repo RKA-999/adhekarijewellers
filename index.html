@@ -22,11 +22,11 @@
     </label>
   
   <nav class="navbar">
-    <a href="index.html" style="--i:0;">Home</a>
-    <a href="about.html" style="--i:1;">About</a>
-    <a href="gallery.html" style="--i:2;">Gallery</a>
-    <a href="internationalgoldprice.html" style="--i:3;">International Gold Price</a>
-    <a href="contact" style="--i:4;">Contact</a>
+    <a href="index.html" style="--i:0;">হোম</a>
+    <a href="about.html" style="--i:1;">সম্পর্কে</a>
+    <a href="gallery.html" style="--i:2;">গ্যালারি</a>
+    <a href="internationalgoldprice.html" style="--i:3;">বৈদেশিক স্বর্ণের মূল্য</a>
+    <a href="contact" style="--i:4;">যোগাযোগ করুন</a>
   </nav>
   </header>
   
@@ -112,10 +112,38 @@
 </table>
 <br>
 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script src="script.js"></script>
+  
+  <div id="goldgraph">
+  <section class="price-chart-section">
+    <h2>📈 গত ৩০ দিনের ২২ ক্যারেট হলমার্ককৃত স্বর্ণের মূল্যের গতিবিধি</h2>
+    <div class="chart-container">
+        <canvas id="goldPriceChart"></canvas></div>
+</section>
+   </div>
+
+<div id="silvergraph">
+<section class="price-chart-section silver-chart">
+    <h2>📈 গত ৩০ দিনের ২২ ক্যারেট হলমার্ককৃত রূপার মূল্যের গতিবিধি</h2>
+    <div class="chart-container">
+        <canvas id="silverPriceChart"></canvas> </div>
+</section>
+</div>
+
+
+
+
+
+
 <div class="note">
   • সর্বশেষ আপডেট: ১৩ নভেম্বর, ২০২৫
   <br>
-  • সময়: দুপুর ০২:০০ ঘটিকা
+  • সময়: রাত ১১:০০ ঘটিকা
 </div>
 <i class='bxr  bx-broadcast' id="live"></i>
 <div class="timebox">
