@@ -285,6 +285,14 @@ body{
       align-items: center;
       justify-content: center;
 }
+
+#golddown{
+    transition: 1s all ease;
+}
+#golddown:hover{
+    transform: translateY(10px);
+}
+
 .product1{
       width: 28%;
       font-weight: 700;
@@ -355,6 +363,14 @@ body{
       align-items: center;
       justify-content: center;
 }
+
+#silverdown{
+    transition: 1s all ease;
+}
+#silverdown:hover{
+    transform: translateY(10px);
+}
+
 .product2{
       width: 28%;
       font-weight: 700; 
