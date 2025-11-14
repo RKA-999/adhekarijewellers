@@ -225,7 +225,8 @@ body {
     margin-top: 25px;
     text-align: right;
     margin-left: 212px;
-    font-size: 16px; 
+    font-size: 15px;  /* update */
+    font-weight: 700; /* update */ 
     text-decoration: none;
     color: white;
     text-align: right;
