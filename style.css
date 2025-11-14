@@ -73,6 +73,17 @@ body {
     font-family: Hind Siliguri;
     font-weight: 700;
 }
+
+/* uodate */
+#menu{
+    color: white;
+    margin-right: 2.9%;
+    margin-top: -2%;
+    font-family: Hind Siliguri;
+    font-size: 25px;
+    font-weight: 900;
+}
+
 .logo{
      margin-left: 25px;
      font-size: 2rem;
@@ -91,7 +102,7 @@ body {
     display: none;
 }
 .icons{
-    top: 27.5%; /* update */
+    top: 60%; /* update */
     position: absolute;
     right: 4.5%;
     font-size: 30px;
