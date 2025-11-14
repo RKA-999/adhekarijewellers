@@ -225,14 +225,15 @@ body {
     margin-top: 25px;
     text-align: right;
     margin-left: 212px;
-    font-size: 16px; 
+    font-size: 15px;  /* update */
+    font-weight: 700; /* update */
     text-decoration: none;
     color: white;
     text-align: right;
     transition: .5s .5s all ease-in;
     }
     #number:hover{
-      font-size: 15.5px;
+      font-size: 14.8px;
       transition: 2s all ease-in;
       color: var(--gold);
     }
@@ -487,11 +488,26 @@ body{
     }
     
     /* Last Update */
+    #notecard{
+        background-color: #FFACAC;
+        border: 1px solid #F1E5E5;
+        border-radius: 20px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #notebanner{
+        color: #EAEAEA;
+        text-shadow: 1px 1px black;
+    }
     .note{
       margin-top: 15px;
       text-align: center;
       font-size: 15px; 
-      font-weight: 500;
+      font-weight: 1000;
       color: var(--cream);
       font-weight: 700;
       animation: onoff 1.5s normal infinite;
@@ -501,7 +517,7 @@ body{
         color: '';
       }
       to{
-        color: var(--gold);
+        color: red;
       }
     }
     #brand{
@@ -541,7 +557,7 @@ body{
       justify-content: center;
       height: auto;
       border-radius: 20px;
-      width: 300px;
+      width: 320px;
       border: 1px solid #DEDEE9; /* update */
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       transition: 1s all ease;
