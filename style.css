@@ -73,7 +73,6 @@ body {
     font-family: Hind Siliguri;
     font-weight: 700;
 }
-
 /* uodate */
 #menu{
     color: white;
@@ -315,6 +314,7 @@ body {
         width: 100%;
         height: auto;
         border-radius: 20px;
+        aspect-ratio: 16/9;
     }
     
     
@@ -686,4 +686,200 @@ body{
 }
 #silvergraph:hover {
     transform: translateY(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social-links{
+    display: block;
+}
+.bajus-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #202832;
+    color: #fff; /* সাদা টেক্সট */
+    padding: 40px 20px;
+    border-radius: 5px;
+    font-family: Hind Siliguri;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#fname{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--gold);
+}
+#fname1{
+    font-size: 15px;
+    font-weight: 200;
+    color: #C3C5D5;
+}
+.footer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.bajusfooter{
+    margin-top: -20px;
+    width: 100%;
+    height: auto;
+}
+
+ .app-download-section{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+.association-names h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.association-names p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f1c40f; /* বাংলায় নামটির জন্য হালকা সোনালী রঙ ব্যবহার করা হয়েছে */
+}
+
+/* ---------------------------------- */
+/* সোশ্যাল লিংক স্টাইল          */
+/* ---------------------------------- */
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footerlogo{
+    height: auto;
+    width: 30px;
+}
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f1c40f; /* হোভারে সোনালী রঙ */
+}
+
+.app-download-section {
+    gap: 15px;
+    margin: 30px 0;
+    width: 150px;
+}
+
+
+#footerb{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.app-store-button, .google-play-button {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    border: 1px solid #fff;
+}
+
+.app-store-button i, .google-play-button i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+.button-text {
+    text-align: center;
+    line-height: 1.2;
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.app-store-button:hover, .google-play-button:hover {
+    background-color: #333;
+}
+
+/* ---------------------------------- */
+/* যোগাযোগের তথ্য স্টাইল        */
+/* ---------------------------------- */
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.contact-info .privacy-policy {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.contact-info .privacy-policy:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/* ---------------------------------- */
+/* কপিরাইট স্টাইল               */
+/* ---------------------------------- */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #333; /* হালকা বিভাজক রেখা */
+    margin: 30px auto;
+    width: 80%;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 20px;
 }
