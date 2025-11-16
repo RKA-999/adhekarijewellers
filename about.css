@@ -357,3 +357,41 @@ p {
         padding: 15px;
     }
 }
+
+
+/* update */
+.dev-main{
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+    background-color: #F8F9FF;
+    padding: 50px 40px;
+    border: 1px solid #E5E7FF;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease;
+}
+.dev-main:hover{
+    transform: scale(.9);
+}
+.developer-banner{
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Hind Siliguri;
+    margin-top: -30px;
+}
+.developer-img{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    transition: .5s all ease;
+}
+.developer-img:hover{
+    transform: scale(0.9);
+}
+
+
