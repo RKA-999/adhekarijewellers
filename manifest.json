@@ -13,3 +13,21 @@
     }
   ]
 }
+
+
+
+{
+  "name": "Adhikari Jewellers",
+  "short_name": "AJ Jewellers", 
+  "start_url": "./",  /* আপনার সাইট রুট ডিরেক্টরি থেকে শুরু হবে */
+  "display": "standalone", /* ইনস্টল হওয়ার পর এটি ব্রাউজারের UI ছাড়া একটি অ্যাপের মতো খুলবে */
+  "background_color": "#ffffff",
+  "theme_color": "#0b1b22",
+  "icons": [
+    {
+      "src": "icon-512x512.png",  
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
