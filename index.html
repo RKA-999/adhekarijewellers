@@ -9,6 +9,18 @@
   <link rel="manifest" href="manifest.json">
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- update111 -->
+
+
+
+
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0b1b22"/> 
+</head>
+  
+
+
+  
 </head>
 <body>
   <!-- Please select desktop mode and rotate your screen -->
@@ -308,6 +320,29 @@
 
 </footer>
 
+
+
+
+
+
+// Service Worker রেজিস্টার করা
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    // /service-worker.js পাথটি নিশ্চিত করুন যে এটি আপনার ফাইলের নামের সাথে মেলে
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('ServiceWorker registered.');
+      })
+      .catch(error => {
+        console.error('ServiceWorker registration failed:', error);
+      });
+  });
+}
+
+
+
+
+    
 
 
 </body>
