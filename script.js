@@ -90,7 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
         maintainAspectRatio: false,
         scales: {
           y: {
-            beginAtZero: false,
+           min: 150000,
+           max: 250000,
             title: { display: true, text: 'মূল্য (টাকা/ভরি)' }
           },
           x: {
@@ -125,7 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
         maintainAspectRatio: false,
         scales: {
           y: {
-            beginAtZero: false,
+          min: 1000,
+          max: 6000,
             title: { display: true, text: 'মূল্য (টাকা/ভরি)' }
           },
           x: {
