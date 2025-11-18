@@ -154,7 +154,7 @@ body {
         overflow: hidden;
         transition: .8s ease;
     }
-     #check:checked~.navbar {
+      #check:checked~.navbar {
     height: 37.7rem;
     }
     .navbar a{
