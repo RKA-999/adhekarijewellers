@@ -276,7 +276,7 @@ body {
 }
 
 .contact-card:hover {
-    transform: translateY(-5px); /* হোভার এফেক্ট */
+    transform: scale(0.96);
 }
 
 /* শিরোনামের স্টাইল */
