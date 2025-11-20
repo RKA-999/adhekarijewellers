@@ -344,14 +344,14 @@ body {
         margin-left: 10px;
         width: 95%;
         height: auto;
-        background-color: whitesmoke;
+        background-color: white;
         border-radius: 15px;
         border: 1px solid #DEDEE9;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: 1s all ease;
+        transition: .5s all ease;
     }
     #vdoarea:hover{
-        transform: scale(0.97);
+        transform: scale(0.99);
     }
     
     #vdo{
