@@ -19,9 +19,11 @@
 }
 body {
     min-height: 100vh;
-    background: var(--cream);
-    background-size: cover;
-    background-position: center;
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
 }
 .header{
     position: fixed;
@@ -252,13 +254,12 @@ body {
     
     
     
-/* Basic Reset and Font Setup */
+/* full page */
 #about-us-odikari {
     font-family: Hind Siliguri;
     line-height: 1.6;
     color: #333; /* গাঢ় ধূসর রঙ */
     padding: 20px;
-    background-color: #f8f9fa; /* হালকা ব্যাকগ্রাউন্ড */
 }
 
 .container {
