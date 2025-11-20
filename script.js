@@ -1,27 +1,3 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-  const alertElement = document.getElementById('alert');
-  alertElement.classList.add('flashing');
-  
-  // ৪ বার অ্যানিমেশন চলার মোট সময়: 4 বার * 2 সেকেন্ড = 8 সেকেন্ড
-  const totalAnimationTime = 5 * 2000; // মিলিসেকেন্ডে (2000ms = 2s)
-  
-  setTimeout(() => {
-    alertElement.classList.remove('flashing');
-    
-    alertElement.style.opacity = 0;
-  }, totalAnimationTime);
-});
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   // গত ৩০ দিনের লেবেল (তারিখের বদলে দিনের ক্রম ব্যবহার করা হলো)
   const labels30Days = [];
