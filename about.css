@@ -75,16 +75,6 @@ body {
     font-family: Hind Siliguri;
     font-weight: 700;
 }
-
-#menu{
-    color: white;
-    margin-right: 2.9%;
-    margin-top: -2%;
-    font-family: Hind Siliguri;
-    font-size: 25px;
-    font-weight: 900;
-}
-
 .logo{
      margin-left: 25px;
      font-size: 2rem;
@@ -103,7 +93,7 @@ body {
     display: none;
 }
 .icons{
-    top: 60%; /* update */
+    top: 27.5%; /* update */
     position: absolute;
     right: 4.5%;
     font-size: 30px;
@@ -237,8 +227,7 @@ body {
     margin-top: 25px;
     text-align: right;
     margin-left: 212px;
-    font-size: 15px;  /* update */
-    font-weight: 700; /* update */ 
+    font-size: 16px; 
     text-decoration: none;
     color: white;
     text-align: right;
@@ -254,7 +243,7 @@ body {
     
     
     
-/* full page */
+/* Basic Reset and Font Setup */
 #about-us-odikari {
     font-family: Hind Siliguri;
     line-height: 1.6;
@@ -383,9 +372,9 @@ p {
     font-size: 25px;
     font-weight: 800;
     font-family: Hind Siliguri;
-    margin-top: -30px;
     color: #FFFFFF;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    margin-top: -30px;
 }
 .developer-img{
     width: 80%;
@@ -396,5 +385,3 @@ p {
 .developer-img:hover{
     transform: scale(0.9);
 }
-
-
