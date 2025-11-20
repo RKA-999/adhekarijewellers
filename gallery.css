@@ -19,9 +19,11 @@
 }
 body {
     min-height: 100vh;
-    background: var(--cream);
-    background-size: cover;
-    background-position: center;
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
 }
 .header{
     position: fixed;
@@ -224,7 +226,7 @@ body {
       display:flex;
       align-items: center;
       gap:14px;
-      border-bottom:3px solid var(--accent);
+      border-bottom: 3px solid var(--accent);
     }
    .logo{
       height: auto;
