@@ -17,12 +17,16 @@
     box-sizing: border-box;
     font-family: Hind Siliguri;
 }
+
 body {
     min-height: 100vh;
-    background: var(--cream);
-    background-size: cover;
-    background-position: center;
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
 }
+
 .header{
     position: fixed;
     top: 0px;
@@ -253,10 +257,9 @@ body {
 
 
 
-/* প্রধান ধারক (Main Container) */
+/* (Main Container) */
 .contact-container {
     padding: 20px;
-    background-color: #f4f4f9; /* হালকা ব্যাকগ্রাউন্ড */
     display: flex;
     flex-direction: column; /* উলম্ব বিন্যাস */
     gap: 15px; /* কার্ডগুলোর মধ্যে দূরত্ব */
