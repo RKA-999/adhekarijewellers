@@ -18,16 +18,13 @@
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(function(OneSignal) {
-    OneSignal.init({
-      appId: "79905097-ab23-41d3-a6e9-ed8b5a65658a", // আপনার নতুন অ্যাপ আইডি
-      safari_web_id: "",
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "79905097-ab23-41d3-a6e9-ed8b5e65658a",
+      safari_web_id: "web.onesignal.auto.10485988-1822-4e96-b399-29edb7cde282",
       notifyButton: {
         enable: true,
       },
-      // এই অংশটিই পাথ ঠিক করে দেবে
-      serviceWorkerPath: "OneSignalSDKWorker.js",
-      serviceWorkerParam: { scope: "/adhekarijewellers/" }
     });
   });
 </script>
