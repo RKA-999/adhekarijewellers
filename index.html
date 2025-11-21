@@ -16,6 +16,70 @@
 
 
 
+
+
+
+
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+
+<script>
+  // STEP 2: আপনার নিজস্ব firebaseConfig অবজেক্ট
+  const firebaseConfig = {
+    apiKey: "AIzaSyAKt9rvg8KS2s27k3F09vi3AmzFoOIHops", 
+    authDomain: "adhekari-jewellers-f7b2a.firebaseapp.com",
+    projectId: "adhekari-jewellers-f7b2a",
+    storageBucket: "adhekari-jewellers-f7b2a.firebasestorage.app",
+    messagingSenderId: "649844882266", // আপনার নিজস্ব Sender ID
+    appId: "1:649844882266:web:43672728810b5a4d549163"
+  };
+
+  // Firebase Initialize করা
+  firebase.initializeApp(firebaseConfig);
+  const messaging = firebase.messaging();
+  
+  // STEP 3: Service Worker রেজিস্ট্রেশন এবং নোটিফিকেশন পারমিশন চাওয়া
+  
+  // Service Worker-কে আপনার সাব-ফোল্ডারে রেজিস্ট্রেশন করা
+  navigator.serviceWorker.register('/adhekarijewellers/firebase-messaging-sw.js')
+    .then((registration) => {
+      // Service Worker-কে Firebase Messaging এর সাথে যুক্ত করা
+      messaging.useServiceWorker(registration);
+      
+      // নোটিফিকেশন পারমিশন চাওয়া
+      messaging.requestPermission()
+        .then(function() {
+          console.log('Notification permission granted.');
+          // টোকেন পাওয়া
+          return messaging.getToken();
+        })
+        .then(function(token) {
+          console.log('FCM Token:', token);
+          // টোকেনটি পাওয়া গেছে, এখন নোটিফিকেশন পাঠানো সম্ভব।
+        })
+        .catch(function(err) {
+          console.log('Unable to get permission to notify.', err);
+        });
+    })
+    .catch((err) => {
+        console.error('Service Worker registration failed: ', err);
+    });
+
+</script>
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
 </head>
 <body>
   <!-- Please select desktop mode and rotate your screen -->
